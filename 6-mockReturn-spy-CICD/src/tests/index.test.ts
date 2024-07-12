@@ -32,7 +32,7 @@ describe("Test for sum function", () => {
             data: {
               a: 1,
               b: 2,
-              type: "sum",
+              type: "Sum",
               answer: 3
             }
           })
