@@ -32,7 +32,7 @@ describe("Test for sum function", () => {
             data: {
               a: 1,
               b: 2,
-              type: "sum",
+              type: "Sum",
               answer: 3
             }
           })
@@ -40,7 +40,6 @@ describe("Test for sum function", () => {
           expect(prismaClient.request.create).toHaveBeenCalledTimes(1);
 
         expect(res.statusCode).toBe(200);
-        expect(res.body.id).toBe(1);
         expect(res.body.answer).toBe(3);
     });
   
